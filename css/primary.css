@@ -28,9 +28,11 @@ img {
   --secondary-color: #ffffff;
   --footer-color: rgba(255, 255, 255, 0.6);
   --background: #2f303a;
+  --hero-background: #c4c4c4;
   --light-background: #f5f4fa;
   --line-header: #ececec;
   --light-line: #eeeeee;
+  --img-overlay: rgba(47, 48, 58, 0.4);
 }
 
 /* Типография */

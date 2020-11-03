@@ -1,6 +1,14 @@
 /* Стили для первой страницы */
 .hero {
-  background-color: var(--background);
+  background-color: var(--hero-background);
+  background-image: linear-gradient(
+      to right,
+      var(--img-overlay),
+      var(--img-overlay)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   height: 600px;
   display: flex;
