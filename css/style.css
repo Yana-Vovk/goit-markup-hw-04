@@ -107,6 +107,34 @@
   margin-bottom: 30px;
 }
 
+.features .li-item::before {
+  content: '';
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--light-background);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features .li-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.features .li-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.features .li-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.features .li-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 /* Раздел чем мы занимаемся */
 .inside-section .list {
   display: flex;
@@ -163,6 +191,13 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+/* Ссылки на соц сети */
+.li-icons li {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 30px;
 }
 

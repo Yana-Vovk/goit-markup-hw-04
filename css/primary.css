@@ -106,8 +106,33 @@ h6 {
   margin-left: auto;
 }
 
+.contacts .li-item {
+  display: inline-flex;
+  align-items: center;
+}
+
 .head-line {
   border-bottom: 1px solid var(--line-header);
+}
+
+.contacts > .li-item:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+}
+
+.contacts > .li-item:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/smartphone.svg);
+  background-size: contain;
 }
 
 /* Основные стили */
@@ -209,4 +234,17 @@ body {
 .info:hover,
 .info:focus {
   color: var(--active-color);
+}
+
+.join {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.li-icons-footer li {
+  display: inline-flex;
 }
