@@ -107,7 +107,7 @@
   margin-bottom: 30px;
 }
 
-.features .li-item::before {
+/* .features .li-item::before {
   content: '';
   display: inline-block;
   width: 270px;
@@ -117,9 +117,20 @@
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
+} */
+
+.grey-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--light-background);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
-.features .li-item:nth-child(1)::before {
+/* .features .li-item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
 }
 
@@ -133,7 +144,7 @@
 
 .features .li-item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 /* Раздел чем мы занимаемся */
 .inside-section .list {
@@ -191,14 +202,46 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 /* Ссылки на соц сети */
-.li-icons li {
-  margin-left: 20px;
-  margin-right: 20px;
+
+.sosial-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--sosial-icon);
+}
+
+.team-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosial-list {
+  margin-right: 32px;
+  margin-left: 32px;
   margin-bottom: 30px;
+}
+
+.sosial-list > li:not(:last-child),
+.join-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-circle:hover,
+.team-circle:focus {
+  background-color: var(--active-color);
+}
+
+.team-circle:hover .sosial-icons,
+.team-circle:focus .sosial-icons {
+  fill: var(--secondary-color);
 }
 
 /* Стили для второй страницы - портфолио */
@@ -282,4 +325,43 @@
 
 .projects .li-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+
+.projects .li-item:hover,
+.projects .li-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Секция клиенты */
+.clients .list {
+  display: flex;
+}
+
+.clients-box {
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--sosial-icon);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon {
+  fill: var(--sosial-icon);
+}
+
+.clients li:hover .client-icon,
+.clients li:focus .client-icon {
+  fill: var(--active-color);
+}
+
+.clients li:hover .clients-box,
+.clients li:focus .clients-box {
+  border: 1px solid var(--active-color);
 }
